@@ -19,8 +19,8 @@ import static enums.inventory.typeEnum.PARTIEL;
 @Slf4j
 public class InventoryTests {
 
-    private final String pathOfInventoryCreationProperty="pathCreateInventory";
-    private final String pathOfFolderProperty="folder";
+    private final static String pathOfInventoryCreationProperty="pathCreateInventory";
+    public final static String pathOfFolderProperty="folder";
 
 
 
@@ -38,7 +38,7 @@ public class InventoryTests {
         //Serliazation
 
         RequestInventory requestInventory= RequestInventory.builder()
-                .name("inventoryTest")
+                .name("inventoryTestk")
                 .date("2026-02-15")
                 .type(PARTIEL)
                 //.inventoryId(12)
