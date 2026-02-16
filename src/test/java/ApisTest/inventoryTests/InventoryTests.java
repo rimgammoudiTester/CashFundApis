@@ -8,6 +8,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.Test;
 import pojos.inventory.RequestInventory;
 
+import java.awt.*;
+
 import static asserts.Asserts.isResponseStatusCorrect;
 import static clientApisCall.inventoryApis.InventoryApis.createAnInventory;
 import static enums.inventory.typeEnum.PARTIEL;
@@ -45,7 +47,7 @@ public class InventoryTests {
          Response res =createAnInventory(requestInventory,endPoint);
         isResponseStatusCorrect(res,200);
         log.info("The responce is succesfully passing");
-         log.info("The response json : "+res.body().asPrettyString());
+         System.out.println("The response json : "+res.body().asPrettyString());
 
     }
 
